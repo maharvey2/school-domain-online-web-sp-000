@@ -7,6 +7,10 @@ class School
       @roster = {}
     end
 
+    def roster
+      @roster
+    end
+
   def add_student(name, grade)
 
     self.roster[grade] ||= []
@@ -25,7 +29,7 @@ class School
     self.roster[grade]
   end
 
-
+def sort
 
 
 
