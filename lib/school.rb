@@ -26,8 +26,8 @@ class School
   end
 
 def sort
-  self.roster.each do |grade, students|
-    grade.students.sort!
+  self.roster.each do |grade, name_array|
+    self.roster[grade]= name_array.sort
   end
 end
 
